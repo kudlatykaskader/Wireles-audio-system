@@ -98,14 +98,17 @@ std::thread udpServer::udpServerThread(std::vector<sf::TcpSocket*> *clients)
 
 bool udpServer::sendtoAll(std::vector<sf::TcpSocket*> *clients, unsigned char* data)
 {
+    if(write == 0)
+	return true;
+    
     for (int i = 0; i < clients->size(); i++)
     {
+
+        
         if (socket.send(data, write,  clients->at(i)->getRemoteAddress(), 10000) != sf::Socket::Done)
             break;
-        if (write == 0)
-        {
-            std::cout << "Empty packet detected at no " << streamPacketCounter << std::endl; 
-        }
+        else;
+        streamPacketCounter++;
         //std::cout << "UDP_SERVER :: Packet send to client " << clients->at(i)->getRemoteAddress() << std::endl;
     }
     return true;
@@ -128,7 +131,7 @@ bool udpServer::getEncodedSampleToBuffer()
     mp3_bufer[0] = ( streamPacketCounter >> 8 ) & 255;
     mp3_bufer[1] = streamPacketCounter & 255;
 
-    streamPacketCounter++;
+
     return true;
 }
 

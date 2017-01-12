@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -lpulse -lpulse-simple -fpermissive -lmp3lame -lsfml-network -lsfml-window -lsfml-system -pthread   CMakeFiles/udp_sender_test.dir/main.cpp.o CMakeFiles/udp_sender_test.dir/tcpinfoserver.cpp.o CMakeFiles/udp_sender_test.dir/udpStreamSource.cpp.o CMakeFiles/udp_sender_test.dir/Timer.cpp.o  -o udp_sender_test -rdynamic 

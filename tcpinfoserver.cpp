@@ -120,7 +120,10 @@ bool tcpInfoServer::acceptNewClientConnection()
     sf::TcpSocket *socket = new sf::TcpSocket;
     tcpServerListener.accept(*socket);
     std::cout << "TCP_SERVER :: New client connected. Ip = " << socket->getRemoteAddress().toString() << std::endl;
-
+    if ( socket->send("[WIFI_DATA;NETIASPOT-436401;WIFI_DEMO_PASS]",  43 ) != sf::Socket::Done )
+        {
+            std::cout << "TCP_SERVER :: ERRPR" << std::endl;
+        }
     //if( testBandwidth(socket) )
     //    return 0;
     tcpClients->push_back(socket);
