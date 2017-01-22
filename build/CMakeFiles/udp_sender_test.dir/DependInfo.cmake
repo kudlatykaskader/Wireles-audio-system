@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/root/Wireles-audio-system/Timer.cpp" "/root/Wireles-audio-system/build/CMakeFiles/udp_sender_test.dir/Timer.cpp.o"
-  "/root/Wireles-audio-system/main.cpp" "/root/Wireles-audio-system/build/CMakeFiles/udp_sender_test.dir/main.cpp.o"
-  "/root/Wireles-audio-system/tcpinfoserver.cpp" "/root/Wireles-audio-system/build/CMakeFiles/udp_sender_test.dir/tcpinfoserver.cpp.o"
-  "/root/Wireles-audio-system/udpStreamSource.cpp" "/root/Wireles-audio-system/build/CMakeFiles/udp_sender_test.dir/udpStreamSource.cpp.o"
+  "/home/mateusz/Wireles-audio-system/Timer.cpp" "/home/mateusz/Wireles-audio-system/build/CMakeFiles/udp_sender_test.dir/Timer.cpp.o"
+  "/home/mateusz/Wireles-audio-system/main.cpp" "/home/mateusz/Wireles-audio-system/build/CMakeFiles/udp_sender_test.dir/main.cpp.o"
+  "/home/mateusz/Wireles-audio-system/tcpinfoserver.cpp" "/home/mateusz/Wireles-audio-system/build/CMakeFiles/udp_sender_test.dir/tcpinfoserver.cpp.o"
+  "/home/mateusz/Wireles-audio-system/udpStreamSource.cpp" "/home/mateusz/Wireles-audio-system/build/CMakeFiles/udp_sender_test.dir/udpStreamSource.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

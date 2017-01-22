@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/root/Wireles-audio-system/Timer.cpp
+/home/mateusz/Wireles-audio-system/Timer.cpp
 Timer.h
-/root/Wireles-audio-system/Timer.h
+/home/mateusz/Wireles-audio-system/Timer.h
 
-/root/Wireles-audio-system/Timer.h
+/home/mateusz/Wireles-audio-system/Timer.h
 sys/time.h
 -
 unistd.h
@@ -18,7 +18,7 @@ unistd.h
 iostream
 -
 
-/root/Wireles-audio-system/main.cpp
+/home/mateusz/Wireles-audio-system/main.cpp
 iostream
 -
 SFML/Network.hpp
@@ -40,13 +40,13 @@ unistd.h
 sys/time.h
 -
 tcpinfoserver.h
-/root/Wireles-audio-system/tcpinfoserver.h
+/home/mateusz/Wireles-audio-system/tcpinfoserver.h
 udpStreamSource.h
-/root/Wireles-audio-system/udpStreamSource.h
+/home/mateusz/Wireles-audio-system/udpStreamSource.h
 
-/root/Wireles-audio-system/tcpinfoserver.cpp
+/home/mateusz/Wireles-audio-system/tcpinfoserver.cpp
 tcpinfoserver.h
-/root/Wireles-audio-system/tcpinfoserver.h
+/home/mateusz/Wireles-audio-system/tcpinfoserver.h
 iostream
 -
 sstream
@@ -56,7 +56,7 @@ thread
 unistd.h
 -
 Timer.h
-/root/Wireles-audio-system/Timer.h
+/home/mateusz/Wireles-audio-system/Timer.h
 cstring
 -
 string.h
@@ -64,7 +64,7 @@ string.h
 vector
 -
 
-/root/Wireles-audio-system/tcpinfoserver.h
+/home/mateusz/Wireles-audio-system/tcpinfoserver.h
 SFML/Network.hpp
 -
 vector
@@ -72,11 +72,11 @@ vector
 thread
 -
 
-/root/Wireles-audio-system/udpStreamSource.cpp
+/home/mateusz/Wireles-audio-system/udpStreamSource.cpp
 udpStreamSource.h
-/root/Wireles-audio-system/udpStreamSource.h
+/home/mateusz/Wireles-audio-system/udpStreamSource.h
 
-/root/Wireles-audio-system/udpStreamSource.h
+/home/mateusz/Wireles-audio-system/udpStreamSource.h
 SFML/Network.hpp
 -
 pulse/simple.h

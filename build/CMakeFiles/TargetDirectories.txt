@@ -1,7 +1,7 @@
-/root/Wireles-audio-system/build/CMakeFiles/install.dir
-/root/Wireles-audio-system/build/CMakeFiles/list_install_components.dir
-/root/Wireles-audio-system/build/CMakeFiles/rebuild_cache.dir
-/root/Wireles-audio-system/build/CMakeFiles/udp_sender_test.dir
-/root/Wireles-audio-system/build/CMakeFiles/install/strip.dir
-/root/Wireles-audio-system/build/CMakeFiles/install/local.dir
-/root/Wireles-audio-system/build/CMakeFiles/edit_cache.dir
+/home/mateusz/Wireles-audio-system/build/CMakeFiles/install.dir
+/home/mateusz/Wireles-audio-system/build/CMakeFiles/list_install_components.dir
+/home/mateusz/Wireles-audio-system/build/CMakeFiles/rebuild_cache.dir
+/home/mateusz/Wireles-audio-system/build/CMakeFiles/udp_sender_test.dir
+/home/mateusz/Wireles-audio-system/build/CMakeFiles/install/strip.dir
+/home/mateusz/Wireles-audio-system/build/CMakeFiles/install/local.dir
+/home/mateusz/Wireles-audio-system/build/CMakeFiles/edit_cache.dir
