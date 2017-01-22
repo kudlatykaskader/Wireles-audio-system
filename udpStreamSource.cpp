@@ -100,17 +100,14 @@ bool udpServer::sendtoAll(std::vector<sf::TcpSocket*> *clients, unsigned char* d
 {
     if(write == 0)
 	return true;
-    
+
     for (int i = 0; i < clients->size(); i++)
     {
-
-        
-        if (socket.send(data, write,  clients->at(i)->getRemoteAddress(), 10000) != sf::Socket::Done)
+        if (socket.send(data, write,  clients->at(i)->getRemoteAddress(), 9998) != sf::Socket::Done)
             break;
         else;
-        streamPacketCounter++;
-        //std::cout << "UDP_SERVER :: Packet send to client " << clients->at(i)->getRemoteAddress() << std::endl;
     }
+    streamPacketCounter++;
     return true;
 }
 

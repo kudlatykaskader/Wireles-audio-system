@@ -91,7 +91,7 @@ void tcpInfoServer::tcpServerMainThread()
         }
     }
     std::cout <<  "TCP loop exit " <<  std::endl;
-    
+
 }
 
 bool tcpInfoServer::isPendingAction()
@@ -104,7 +104,7 @@ bool tcpInfoServer::isPendingAction()
             tcpSelector.remove( *tcpClients->at(i) );
             delete tcpClients->at(i);
             tcpClients->erase(tcpClients->begin() + i);
-            
+
             std::cout << "TCP_SERVER :: Clients list: "<< tcpClients->size() << std::endl;
         }
     return this->tcpSelector.wait( sf::seconds(5) );
@@ -120,7 +120,7 @@ bool tcpInfoServer::acceptNewClientConnection()
     sf::TcpSocket *socket = new sf::TcpSocket;
     tcpServerListener.accept(*socket);
     std::cout << "TCP_SERVER :: New client connected. Ip = " << socket->getRemoteAddress().toString() << std::endl;
-    if ( socket->send("[WIFI_DATA;NETIASPOT-436401;WIFI_DEMO_PASS]",  43 ) != sf::Socket::Done )
+    if ( socket->send("WIFI_DATA;SSID=NETIASPOT-430930;PASSWD=j6dbv7mo8996@", 52 ) != sf::Socket::Done )
         {
             std::cout << "TCP_SERVER :: ERRPR" << std::endl;
         }
@@ -219,7 +219,7 @@ bool tcpInfoServer::testBandwidth(std::vector<sf::TcpSocket *> *clients)
         }
         packet.clear();
 
-        
+
         char testPacket[50000];
         for (int i = 0; i < sizeof(testPacket); i++)
             testPacket[i] = '$';
@@ -256,14 +256,14 @@ void tcpInfoServer::testClients()
 {
     for (int i = 0; i< tcpClients->size(); i++ )
     {
-        testBandwidth( tcpClients->at(i) ); 
+        testBandwidth( tcpClients->at(i) );
     }
 }
 void tcpInfoServer::printClients()
 {
     for (int i = 0; i< tcpClients->size(); i++ )
     {
-        std::cout <<  i << ": IP: " << tcpClients->at(i)->getRemoteAddress() << " " << tcpClients->at(i)->getRemotePort(); 
+        std::cout <<  i << ": IP: " << tcpClients->at(i)->getRemoteAddress() << " " << tcpClients->at(i)->getRemotePort();
     }
 }
 
